@@ -15,7 +15,7 @@ function App() {
 
   return (
     <main className='App'>
-      MERN-L CHEESEBURGER
+    QUICK NOTES
       { user ?
       <>
         <NavBar user={ user } setUser={ setUser } />

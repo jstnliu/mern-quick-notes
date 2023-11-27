@@ -24,9 +24,9 @@ app.use(logger('dev'));
 app.use(express.json());
 
 // Configure both serve-favicon & static middleware
-// to serve from the production 'build' folder
-app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
-app.use(express.static(path.join(__dirname, 'build')));
+// to serve from the production 'public' folder
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./config/checkToken'))
 
